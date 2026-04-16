@@ -134,13 +134,13 @@ import { AuthService } from '../../../core/services/auth.service';
     }
     @keyframes orb-float {
       from { transform: translate(0,0) scale(1); }
-      to   { transform: translate(30px, 20px) scale(1.05); }
+      to   { transform: translate(15px, 10px) scale(1.02); }
     }
 
     .auth-card {
       width: 100%;
       max-width: 420px;
-      padding: 40px 36px;
+      padding: 40px;
       position: relative;
       z-index: 1;
     }
@@ -157,7 +157,7 @@ import { AuthService } from '../../../core/services/auth.service';
       box-shadow: 0 0 40px rgba(139,92,246,0.4), 0 8px 24px rgba(139,92,246,0.3);
       display: flex; align-items: center; justify-content: center;
       font-size: 1.5rem;
-      font-weight: 800;
+      font-weight: 700;
       color: white;
       letter-spacing: -0.05em;
     }
@@ -165,7 +165,7 @@ import { AuthService } from '../../../core/services/auth.service';
     .auth-title {
       text-align: center;
       font-size: 1.6rem;
-      font-weight: 700;
+      font-weight: 600;
       color: var(--text-100);
       margin: 0 0 8px;
       letter-spacing: -0.03em;
@@ -206,6 +206,7 @@ import { AuthService } from '../../../core/services/auth.service';
       width: 100% !important;
       height: 46px !important;
       font-size: 0.9rem !important;
+      letter-spacing: -0.01em !important;
       margin-top: 8px;
     }
 

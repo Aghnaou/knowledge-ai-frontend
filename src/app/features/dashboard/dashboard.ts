@@ -399,7 +399,7 @@ import { Document as KnowledgeDocument } from '../../core/models/document.model'
       font-weight: 600;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      color: var(--text-500);
+      color: var(--text-400);
       margin-bottom: 8px;
     }
     .greeting-dot {
@@ -414,7 +414,7 @@ import { Document as KnowledgeDocument } from '../../core/models/document.model'
     }
     .page-title {
       font-size: 1.75rem;
-      font-weight: 700;
+      font-weight: 600;
       color: var(--text-100);
       margin: 0 0 6px;
       letter-spacing: -0.04em;
@@ -439,6 +439,7 @@ import { Document as KnowledgeDocument } from '../../core/models/document.model'
       transition: all var(--transition);
       mat-icon { font-size: 16px !important; width: 16px !important; height: 16px !important; }
       &:hover { background: rgba(255,255,255,0.08); border-color: var(--border-lg); color: var(--text-100); }
+      &:active { transform: scale(0.98); }
     }
     .cta-btn {
       display: inline-flex; align-items: center; gap: 6px;
@@ -449,6 +450,7 @@ import { Document as KnowledgeDocument } from '../../core/models/document.model'
       transition: all var(--transition); flex-shrink: 0;
       mat-icon { font-size: 16px !important; width: 16px !important; height: 16px !important; }
       &:hover { box-shadow: 0 6px 28px rgba(139,92,246,0.5); transform: translateY(-1px); }
+      &:active { transform: scale(0.98) translateY(0); box-shadow: 0 4px 20px rgba(139,92,246,0.35); }
     }
     .btn-primary {
       display: inline-flex; align-items: center; gap: 6px;
@@ -485,7 +487,7 @@ import { Document as KnowledgeDocument } from '../../core/models/document.model'
         opacity: 0;
         transition: opacity var(--transition);
       }
-      &:hover { border-color: var(--border-md); transform: translateY(-2px); }
+      &:hover { border-color: var(--border-md); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,0,0,0.35); }
       &:hover::after { opacity: 1; }
     }
     .stat-violet::after { background: linear-gradient(90deg, transparent, rgba(139,92,246,0.6), transparent); }
@@ -516,7 +518,7 @@ import { Document as KnowledgeDocument } from '../../core/models/document.model'
     .badge-amber   { background: rgba(251,191,36,0.1); color: var(--amber); border: 1px solid rgba(251,191,36,0.18); }
 
     .stat-number {
-      font-size: 1.9rem; font-weight: 700;
+      font-size: 1.9rem; font-weight: 600;
       color: var(--text-100); letter-spacing: -0.04em; line-height: 1;
       margin-bottom: 5px;
     }
@@ -561,7 +563,7 @@ import { Document as KnowledgeDocument } from '../../core/models/document.model'
     }
     .widget-title {
       display: flex; align-items: center; gap: 10px;
-      font-size: 0.8rem; font-weight: 700;
+      font-size: 0.8rem; font-weight: 600;
       color: var(--text-200); letter-spacing: 0.02em;
     }
     .widget-icon {
@@ -589,9 +591,10 @@ import { Document as KnowledgeDocument } from '../../core/models/document.model'
       display: flex; align-items: center; gap: 12px;
       padding: 10px 18px;
       text-decoration: none;
-      transition: background var(--transition);
+      transition: all var(--transition);
       cursor: pointer;
       &:hover { background: rgba(255,255,255,0.04); .conv-arrow { opacity: 1; transform: translateX(3px); } }
+      &:active { transform: scale(0.98); }
     }
     .conv-icon {
       width: 36px; height: 36px; border-radius: 10px; flex-shrink: 0;
@@ -699,7 +702,7 @@ import { Document as KnowledgeDocument } from '../../core/models/document.model'
       display: flex; align-items: center; justify-content: center;
       mat-icon { font-size: 18px !important; width: 18px !important; height: 18px !important; color: #a78bfa !important; }
     }
-    .ai-status-title { font-size: 0.875rem; font-weight: 700; color: var(--text-100); margin-bottom: 2px; }
+    .ai-status-title { font-size: 0.875rem; font-weight: 600; color: var(--text-100); margin-bottom: 2px; }
     .ai-status-sub   { font-size: 0.72rem; color: var(--text-400); }
     .ai-live-badge {
       margin-left: auto;

@@ -113,7 +113,7 @@ interface NavItem {
 
     .sidebar-inner {
       background: linear-gradient(180deg, #0f0f1d 0%, #0a0a15 100%);
-      border-right: 1px solid var(--border-xs);
+      border-right: 1px solid var(--border-sm);
       padding: 0;
     }
 
@@ -135,13 +135,13 @@ interface NavItem {
     }
     .brand-icon-inner {
       color: white;
-      font-weight: 800;
+      font-weight: 700;
       font-size: 1rem;
       letter-spacing: -0.05em;
     }
     .brand-name {
       font-size: 0.95rem;
-      font-weight: 700;
+      font-weight: 600;
       color: var(--text-100);
       letter-spacing: -0.02em;
     }
@@ -171,7 +171,7 @@ interface NavItem {
       align-items: center;
       gap: 10px;
       padding: 9px 12px;
-      border-radius: 10px;
+      border-radius: var(--radius-md);
       text-decoration: none;
       color: var(--text-400);
       font-size: 0.85rem;
@@ -184,7 +184,9 @@ interface NavItem {
       &:hover {
         background: rgba(255,255,255,0.05);
         color: var(--text-200);
+        .nav-icon { color: var(--text-200) !important; }
       }
+      &:active { transform: scale(0.98); }
     }
     .nav-item-active {
       background: rgba(139,92,246,0.15) !important;
@@ -214,19 +216,20 @@ interface NavItem {
       padding: 8px 10px;
       background: rgba(255,255,255,0.04);
       border: 1px solid var(--border-sm);
-      border-radius: 10px;
+      border-radius: var(--radius-md);
       cursor: pointer;
       transition: all var(--transition);
       text-align: left;
 
       &:hover { background: rgba(255,255,255,0.07); }
+      &:active { transform: scale(0.98); }
     }
     .user-avatar {
       width: 30px; height: 30px;
       border-radius: 8px;
       background: var(--grad-primary);
       display: flex; align-items: center; justify-content: center;
-      font-size: 0.7rem; font-weight: 700; color: white;
+      font-size: 0.7rem; font-weight: 600; color: white;
       flex-shrink: 0;
     }
     .user-info { flex: 1; min-width: 0; }

@@ -99,7 +99,7 @@ html, body {
     box-shadow: 0 6px 28px rgba(139,92,246,0.5) !important;
     transform: translateY(-1px);
   }
-  &:active { transform: translateY(0) !important; }
+  &:active { transform: scale(0.98) translateY(0) !important; }
   &:disabled { opacity: 0.4 !important; box-shadow: none !important; }
 }
 
